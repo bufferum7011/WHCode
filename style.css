@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Shototam';
+    src: url('Core\ Sans\ CR\ 35\ Light.woff2') format('woff2');
+    font-weight: 700;
+}
+* { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline; 
+}
+:root {
+    --colorWhite: rgb(255, 255, 255);
+    --colorGray: rgb(33, 33, 33);
+} 
+body {
+    color: rgb(0, 0, 0);
+    font-family: 'Shototam';
+    background: rgb(33, 33, 33);
+    /* background: url('../../img/texture-333.png'); */
+}
+/* ====================================== */
+
+/* Header */
+header {
+    /* height: 1940px;
+    width: 100%; */
+    display:inline-flex;
+    background: url('img/header_home.svg') no-repeat;
+}
+.header_logo {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+}
+.header__ul1 {
+    margin: auto 0;
+    text-align: center;
+    opacity: 100%;
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 25px;
+}
+.header__ul1 li {
+    margin-left: 50px;
+}
+.header__ul2 {
+    /* width: 200px; */
+    margin: auto 0;
+    text-align: center;
+    background: rgb(33, 33, 33);
+    color: rgb(255, 255, 255);
+    display: inline-flex;
+    list-style-type: none;
+    /* justify-content: start; */
+    font-size: 25px;
+}
+/* Белая линия */
+.header_line {
+    height: 1px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+}
+
+
+/* Вторая чать Header */
+.header__navigation {
+    height: 50px;
+    width: 100%;
+}
+.header__part2 {
+    list-style-type: none;
+    height: 400px;
+    width: 1000px;
+    margin-left: 300px;
+    margin-top: 300px;
+}
+#text1 p {
+    height: 400px;
+    width: 800px;
+    text-align: start;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+#text2 p {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+
+/* news в header */
+.header__news {
+    background: rgb(33, 33, 33);
+}
+.header__news_text {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    list-style-type: none;
+    text-align: start;
+}
+.header__news_text li :not(:last-of-type) {
+    margin-bottom: 50px;
+}
+.header__news_img1 {
+    background: url('img/header_img1.svg') no-repeat;
+}
+.header__news_img2 {
+    background: url('img/header_img2.svg') no-repeat;
+}
+
+
+/* content - Всё кроме header и footer */
+.content {
+    background-image: url('img/bg_tree1.png');
+    padding: 50px 200px;
+}
+
+/* select_project */
+.select_project {
+    justify-content: center;
+    display: block;
+    padding: 50px 0px;
+}
+.select_project_cluster {
+    justify-content: center;
+}
+.select_project_item {
+    height: auto;
+    width: 458px;
+}
+.select_project_img {
+    height: 420px;
+    width: 420px;
+}
+
+
+/* our_activities */
+.our_activities {
+    padding: 50px 0px;
+    background-color: rgb(233, 233, 233);
+}
+.our_activities_button {
+    justify-content: end;
+}
+.our_activities_cluster :not(:last-of-type) {
+    margin-right: 15px;
+}
+.our_activities_item {
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    border-radius: 10px;
+    max-width: 400px;
+}
+.our_activities_item td {
+    padding: 20px 20px 0px 20px;
+}
+
+
+/* stage_of_work */
+.stage_of_work {
+    padding: 50px 0px;
+}
+
+
+/* biography */
+.biography {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+
+/* benifits */
+.benifits {
+    padding: 50px 0px;
+    background-color: rgb(233, 233, 233);
+}
+.benifits_item {
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* news */
+.news {
+    padding: 50px 0px;
+}
+.news_button {
+    justify-content: end;
+}
+.news_cluster {
+    justify-content: center;
+}
+.news_item {
+    max-width: 400px;
+    background-color:rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 20px 20px 0px 20px;
+}
+.news_cluster :not(:last-of-type) {
+    margin-right: 15px;
+}
+
+
+/* footer */
+footer {
+    background-color:rgb(33, 33, 33);
+    height: 541px;
+    padding: 50px 200px;
+}
+.footer_services {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+.footer_about {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+.footer_social_network {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+.footer_contacts {
+    list-style-type: none;
+    color: rgb(255, 255, 255);
+}
+.footer_line {
+    max-height: 1px;
+    background-color:rgb(255, 255, 255);
+    height: 1px;
+    width: 100%;
+}
+.footer_after {
+    color: rgb(255, 255, 255);
+}
