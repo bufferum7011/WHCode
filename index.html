@@ -10,69 +10,73 @@
 <body>
 
     <!-- modal_window -->
-    <div class="row row-cols-2 modal_window">
-        <div class="col-1 modal_window_title justify-content-md-start">
-            <p>Задайте вопрос</p>
-        </div>
-        <div class="col-6 justify-content-md-end">
-            <button value="X">
-        </div>
-    </div>
+    <ul class="modal_window">
+        <li class="row row-cols-12">
+            <div class="col-6 modal_window_title justify-content-md-start">
+                <p>Задайте вопрос</p>
+            </div>
+            <div class="col-6 modal_window_title justify-content-md-end">
+                <button class="btn_1" onclick="btn_qustion_close(this)">X</button>
+            </div>
+        </li>
+        <li>
+            <input type="text" placeholder="Имя" name="name">
+            <input type="email" placeholder="Почта" name="email">
+        </li>
+        <li><textarea class="modal_window_textarea" placeholder="Сообщение" name="message"></textarea></li>
+        <li><input class="modal_window_input_file" type="file" name="file"></li>
+        <li><button class="modal_window_input_btn">Отправить</button></li>
+    </ul>
 
     <!-- header -->
-    <header class="row row-cols-7 header__ul1"><!--косяк cols-7-->
+    <header class="row row-cols-8 header_ul1"><!--косяк cols-7-->
         <!-- Навигация -->
-        <div class="col"><a href="#"><img class="header_logo" src="img/logo.svg"></a></div>
-        <div class="col"><a href="#">типовые проекты</a></div>
-        <div class="col"><a href="#">услуги</a></div>
-        <!-- Делаем как себе -->
-        <div class="col">
-            <a href="#">портфолио</a>
-            <!-- <ul style="list-style-type: none; padding-top: 300px;"><!9--косяк-9->
-                <li id="text1"><p>Делаем как себе компания woodenhouse</p></li>
-                <li id="text2"><p>
-                    Подобать проект <img src="img/vector.svg"> 
-                </p></li>
-            </ul> -->
-        </div>
-        <div class="col"><a href="#">наши работы</a></div>
-        <div class="col"><a href="#">контакты</a></div>
+        <a class="col header_btn_text" href="#"><img class="header_logo" src="img/logo.svg"></a>
+        <a class="col header_btn_text" href="#">типовые проекты</a>
+        <a class="col header_btn_text" href="#">услуги</a>
+        <a class="col header_btn_text" href="#">портфолио</a>
+        <a class="col header_btn_text" href="#">наши работы</a>
+        <a class="col header_btn_text" href="#">контакты</a>
         <!-- Правые виджеты -->
-        <div class="col row row-cols-2 header__ul2">
-            <div class="col" style="width: 500px;"><!--косяк-->
-                <a href="#">+7(999)999-99-99</a>
-                <!-- news 1 -->
-                <ul class="header__news_img1 header__news_text">
-                    <li>Работа над кровлей временно приостановлена по причине...</li>
-                    <li>11 ноября 2022 года</li>
-                </ul>
+        <div class="col header_ul2">
+            <a class="header_btn_text" href="#">+7(999)999-99-99</a>
 
-                <!-- news 2 -->
-                <ul class="header__news_img2 header__news_text">
-                    <li>Успейте забрать свой дом прямо сейчас. В 4-ом корпусе осталось всего 10 вариантов...</li>
-                    <li>11 ноября 2022 года</li>
-                    <li>
-                        <img src="img/vector_green_circle.svg">
-                        <img src="img/vector_green.svg">
-                        Подробнее
-                    </li>
-                </ul>
-
-                <!-- news 3 -->
-                <ul class="header__news_img2 header__news_text">
-                    <li>Ипотека на жилье теперь 3%. Успейте забрать свой дом прямо сейчас. В 4-ом корпусе осталось всего 10 вариантов...</li>
-                    <li>11 ноября 2022 года</li>
-                    <li>
-                        <img src="img/vector_green_circle.svg">
-                        <img src="img/vector_green.svg">
-                        Подробнее
-                    </li>
-                </ul>
-            </div>
-            <div class="col">
-                <input type="button" value="задать вопрос" onclick="btn_qustion(this)">
-            </div>
+            <!-- news 1 -->
+            <ul class="header_news_img1 header_news_text">
+                <li>Работа над кровлей временно приостановлена по причине...</li>
+                <li>11 ноября 2022 года</li>
+            </ul>
+            <!-- news 2 -->
+            <ul class="header_news_img2 header_news_text">
+                <li>Успейте забрать свой дом прямо сейчас. В 4-ом корпусе осталось всего 10 вариантов...</li>
+                <li>11 ноября 2022 года</li>
+                <li>
+                    <img src="img/vector_green_circle.svg">
+                    <img src="img/vector_green.svg">
+                    Подробнее
+                </li>
+            </ul>
+            <!-- news 3 -->
+            <ul class="header_news_img2 header_news_text">
+                <li>Ипотека на жилье теперь 3%. Успейте забрать свой дом прямо сейчас. В 4-ом корпусе осталось всего 10 вариантов...</li>
+                <li>11 ноября 2022 года</li>
+                <li>
+                    <img src="img/vector_green_circle.svg">
+                    <img src="img/vector_green.svg">
+                    Подробнее
+                </li>
+            </ul>
         </div>
+        <div class="col bg_33">
+            <button class="header_btn_text btn_2" onclick="btn_qustion_open(this)">задать вопрос</button>
+        </div>
+        <!-- Делаем как себе -->
+        <!-- <ul style="list-style-type: none; padding-top: 300px;"><!9--косяк--9>
+            <li id="text1"><p>Делаем как себе компания woodenhouse</p></li>
+            <li id="text2"><p>
+                Подобать проект <img src="img/vector.svg"> 
+            </p></li>
+        </ul> -->
     </header>
 
     <!-- content -->
